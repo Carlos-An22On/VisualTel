@@ -3,9 +3,61 @@
 {% block title %}Inicio - Visualtel SAS{% endblock %}
 
 {% block content %}
-<div class="container text-center my-5">
-    <h1>¡Bienvenido a Visualtel SAS!</h1>
-    <p>Impulsamos tu productividad con tecnología de punta.</p>
-    <a href="/contact" class="btn btn-primary">Contáctanos</a>
-</div>
+<!-- Hero Principal -->
+<section class="hero bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">¡Impulsamos tu negocio con tecnología de punta!</h1>
+        <p class="lead text-highlight">Desde el alquiler de impresoras hasta el desarrollo de software y estrategias de marketing digital.</p>
+        <a href="/contact" class="btn btn-light btn-lg mt-3">Contáctanos</a>
+    </div>
+</section>
+
+<!-- Servicios Destacados -->
+<section class="services py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Nuestros Servicios</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Servicio 1 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/impresoras.png') }}" class="card-img-top" alt="Alquiler de Impresoras">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Alquiler de Impresoras</h5>
+                        <p class="card-text">Te ofrecemos impresoras modernas con soporte técnico completo y conexión a redes.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Servicio 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/software.png') }}" class="card-img-top" alt="Desarrollo de Software">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Desarrollo de Software</h5>
+                        <p class="card-text">Creamos páginas web, aplicaciones y sistemas personalizados para tu negocio.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Servicio 3 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/marketing.png') }}" class="card-img-top" alt="Marketing Digital">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Marketing Digital</h5>
+                        <p class="card-text">Gestionamos redes sociales y creamos estrategias digitales para aumentar tu alcance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonios -->
+<section class="testimonials bg-secondary text-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">¿Qué opinan nuestros clientes?</h2>
+        <p class="text-center">"Gracias a Visualtel SAS, hemos optimizado nuestras redes sociales y sistemas internos. ¡Altamente recomendados!"</p>
+        <p class="text-center font-italic">- Cliente Satisfecho</p>
+    </div>
+</section>
+
 {% endblock %}
