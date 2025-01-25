@@ -78,3 +78,24 @@ p {
     background-color: #e6e6e6;
 }
 
+/* Estilo para la barra de navegación */
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Color de texto predeterminado */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; /* Línea inferior oculta inicialmente */
+    padding-bottom: 5px; /* Espacio debajo del texto para la línea */
+}
+
+/* Efecto al pasar el cursor */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #00bcd4; /* Cambia el color del texto al pasar el cursor */
+    border-bottom: 2px solid #00bcd4; /* Aparece una línea inferior */
+}
+
+/* Para el enlace activo */
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #00bcd4;
+    border-bottom: 2px solid #00bcd4;
+    font-weight: bold; /* Resalta el enlace activo */
+}
+
