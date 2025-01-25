@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Servicios - Visualtel SAS{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center mb-4">Nuestros Servicios</h1>
+    <p class="text-center text-muted mb-5">Conoce cómo podemos ayudarte a potenciar tu negocio con nuestras soluciones tecnológicas.</p>
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Servicio 1 -->
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="{{ url_for('static', filename='images/servicio1.png') }}" class="card-img-top" alt="Servicio 1">
+                <div class="card-body">
+                    <h5 class="card-title">Desarrollo de Software</h5>
+                    <p class="card-text">Creamos soluciones a la medida para optimizar tus procesos y maximizar tu productividad.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="{{ url_for('static', filename='images/servicio2.png') }}" class="card-img-top" alt="Servicio 2">
+                <div class="card-body">
+                    <h5 class="card-title">Mantenimiento de Servidores</h5>
+                    <p class="card-text">Garantizamos el correcto funcionamiento de tus servidores con soporte especializado.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="col">
+            <div class="card h-100 text-center">
+                <img src="{{ url_for('static', filename='images/servicio3.png') }}" class="card-img-top" alt="Servicio 3">
+                <div class="card-body">
+                    <h5 class="card-title">Consultoría Tecnológica</h5>
+                    <p class="card-text">Te ayudamos a implementar estrategias tecnológicas para el crecimiento de tu negocio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
