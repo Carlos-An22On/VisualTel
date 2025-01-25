@@ -20,3 +20,6 @@ def contact():
 
 if __name__ == '__main__':
     app.run(debug=True)
+@app.route('/services')
+def services():
+    return render_template('services.html')
